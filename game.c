@@ -118,7 +118,7 @@ int main() {
 
         printf("\nDo you want to play again? (yes or no): ");
         fgets(input, sizeof(input), stdin);
-        input[strcspn(input, "\n")] = '\0'; // Remove newline
+        input[strcspn(input, "\n")] = '\0';
 
         if (strcmp(input, "yes") != 0 && strcmp(input, "Yes") != 0) {
             printf("Thank you for playing! Goodbye!\n");
@@ -128,3 +128,4 @@ int main() {
 
     return 0;
 }
+
